@@ -12,6 +12,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit"
+  
   },
   "imports": {
     "#controllers/*": "./app/controllers/*.js",
