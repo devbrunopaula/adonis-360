@@ -1,0 +1,14 @@
+# create a docker service to run postgres
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: adonis-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: db
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/var/lib/postgresql/data
